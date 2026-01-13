@@ -1,0 +1,120 @@
+:root {
+    --bg: #000;
+    --text: rgb(255, 255, 255);
+    --muted: rgb(255, 255, 255);
+    --accent: rgb(255, 255, 255);
+    --pixel-size: 2px;
+    --transition: 0.2s;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif
+}
+
+body {
+    background: var(--bg);
+    color: var(--text);
+    line-height: 1.5;
+    min-height: 100vh;
+}
+
+/* Hero section as header */
+.hero {
+    padding: 3rem 2rem;
+    text-align: left;
+    border-bottom: 1px solid var(--muted);
+}
+
+.hero h1 {
+    font-size: 2rem;
+    letter-spacing: 2px;
+    text-shadow: 0 0 1px var(--accent), 1px 1px var(--muted);
+    margin-bottom: 1rem;
+}
+
+.hero p {
+    font-size: 1rem;
+    color: var(--muted);
+    margin-bottom: 2rem;
+}
+
+/* Buttons pixelated */
+.btn {
+    display: inline-block;
+    padding: 0.4rem 0.8rem;
+    border: 1px solid var(--accent);
+    color: var(--text);
+    background: none;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    margin-right: 0.5rem;
+    cursor: pointer;
+    transition: var(--transition);
+    image-rendering: pixelated;
+}
+
+.btn:hover {
+    background: var(--muted);
+    color: #000;
+    border-color: var(--text);
+}
+
+/* Primary button */
+.btn.primary {
+    background: var(--accent);
+    color: #000;
+}
+
+/* Games section */
+.games {
+    padding: 2rem;
+    border-top: 1px solid var(--muted);
+}
+
+.games h2 {
+    font-size: 1.5rem;
+    letter-spacing: 1px;
+    text-shadow: 0 0 1px var(--accent);
+    margin-bottom: 1rem;
+}
+
+.game-list {
+    list-style: none;
+}
+
+.game-list li {
+    margin-bottom: 0.5rem;
+}
+
+.game-list li a {
+    color: var(--text);
+    text-decoration: none;
+    display: inline-block;
+    padding: 0.2rem 0.4rem;
+    border: 1px solid var(--muted);
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 1px;
+    image-rendering: pixelated;
+}
+
+.game-list li a:hover {
+    background: var(--muted);
+    color: #000;
+    border-color: var(--accent);
+}
+
+/* Footer */
+.footer {
+    padding: 1.5rem 2rem;
+    text-align: center;
+    color: var(--muted);
+    border-top: 1px solid var(--muted);
+    font-size: 0.9rem;
+    letter-spacing: 1px;
+}
